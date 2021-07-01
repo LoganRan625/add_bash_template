@@ -13,7 +13,8 @@ add your own templates inside \<bash_templates\>
 Before and after each template in \<bash_templates\> 
   1) line must start with "#_ " on the same line
   2) the title of the template seperated by "_"
-   EXAMPLE "#_ basic_functions"
+    
+    EXAMPLE "#_ basic_functions"
       without an underscore in the name it will
       not show in list of avialable templates to choose
 
