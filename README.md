@@ -15,7 +15,7 @@ Before and after each template in \<bash_templates\>
   2) the title of the template seperated by "_"
     
     EXAMPLE "#_ basic_functions"
-      without an underscore in the name it will
+      note; without an underscore in the name it will
       not show in list of avialable templates to choose
 
 
@@ -28,8 +28,8 @@ Before and after each template in \<bash_templates\>
 
 # USAGE: 
 
-  Syntax "./add_bash_template \<arg1\>"
+    Syntax "./add_bash_template \<arg1\>"
 
-  Example "./add_bash_template newfile.sh"
+    Example "./add_bash_template newfile.sh"
   
 
