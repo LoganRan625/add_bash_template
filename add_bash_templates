@@ -23,7 +23,6 @@ read choice
 second_chosen=$(cat $template_file | grep "#_ " | grep ${saved[$choice]})
 tw=$((choice-=1))
 chosen=$(cat $template_file | grep "#_ " | grep ${saved[$tw]})
-all_lines=$(wc -l $template_file | awk '{print $1}')
 
 while read line; do
     ((num_lines+=1))
