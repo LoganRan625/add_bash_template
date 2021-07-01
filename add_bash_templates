@@ -3,7 +3,7 @@
 ########################## - add bash templates to file - ##############################
 # vars
 new_file=$1
-if [ "$newfile" == "" ]; then
+if [ "$new_file" == "" ]; then
     new_file='tmp.sh'
 fi
 
