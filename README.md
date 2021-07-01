@@ -5,10 +5,12 @@ choose which functions, variables, common loops, from a template file to add to 
 # BEFORE RUNNING:
 
 For this to work you need both
-  1) add_bash_template file
-  2) bash_templates file
+  1) add_bash_templates
+  2) bash_templates 
+
+add your own templates inside \<bash_templates\>
   
-Before and after each template in <bash_templates> 
+Before and after each template in \<bash_templates\> 
   1) line must start with "#_ " on the same line
   2) the title of the template seperated by "_"
    EXAMPLE "#_ basic_functions"
@@ -19,8 +21,8 @@ Before and after each template in <bash_templates>
 # WHAT IT DOES:
   
   creates a list of templates to choose from by number, the
-  selected template is then found in the file <bash_templates>
-  and added to your new bash file <tmp.sh>. 
+  selected template is then found in the file \<bash_templates\>
+  and added to your new bash file \<tmp.sh\>. 
 
 
 # USAGE: 
