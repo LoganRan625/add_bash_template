@@ -23,7 +23,7 @@ Before and after each template in <bash_templates>
   and added to your new bash file <tmp.sh>. 
 
 
-#USAGE: 
+# USAGE: 
 
   Syntax "./add_bash_template <arg1>"
 
