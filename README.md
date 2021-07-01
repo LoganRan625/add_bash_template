@@ -25,7 +25,7 @@ Before and after each template in <bash_templates>
 
 # USAGE: 
 
-  Syntax "./add_bash_template <arg1>"
+  Syntax "./add_bash_template \<arg1\>"
 
   Example "./add_bash_template newfile.sh"
   
