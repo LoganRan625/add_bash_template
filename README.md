@@ -30,7 +30,7 @@ Before and after each template in \<bash_templates\>
 
    Syntax 
    
-     ./add_bash_template \<arg1\> 
+     ./add_bash_template <arg1> 
 
    Example 
         
