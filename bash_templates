@@ -1,0 +1,96 @@
+#!/bin/bash
+
+######################################## -BASH TEMPLATES- ##########################################
+
+#_ add_name_of_template_here
+
+
+#_ all_$s
+echo $@
+echo $#
+echo $! # command line usage, grabs last arg used in last command
+echo $_ # does the same thing
+echo $a1
+echo $? # exit status of most recent pipeline
+cat $name?.sh # cat all sh files that start with $name
+
+#_ number_of_arguments
+for i in "$@"
+do
+    ((args++))
+done
+echo "$args"
+
+#_ variable_current_function_name
+echo "${FUNCNAME}"
+
+#_ check_if_root
+#   option 1
+echo $UID # bool, 0=true 1=false
+#   option 2
+whoami
+
+#_ regex_comparison
+#  for re or check if number
+if [[ $a1 =~ ^[0-9] ]]; then
+    echo "$1 is an integer between 1-9"
+fi
+
+#_ missing_required_argument
+#   option 1
+if [[ $# -lt 0 ]]; then
+    printf 'Missing required argument\n' && exit
+fi
+#   option 2
+if [[ -z "$a1" ]]; then
+    echo "missing required argument" && exit
+fi
+
+#_ commented_out_kinds_of_if_conditions
+# if statement conditions
+# [[ -n $string ]]  string is NOT_EMPTY
+# [[ -z $string ]]  string is EMPTY
+# [[ $string =~ regex ]] string matches regular expression
+# [[ -e file ]] file exists
+# [[ -f file ]] is a file
+# [[ -d file ]] is a directory
+# [[ -t fd ]] fd is open and refers to a terminal
+
+#_ skeleton_main_function
+function main(){ # <arg1> <arg2>
+    input1=$a1; input2=$a2
+    while :
+    do
+        if [];then
+            #something
+        elif []; then
+            #something
+        else
+            #something
+        fi
+    done
+}
+
+#_ skeleton_while_true
+while true
+do
+    #something
+done
+
+#_ split_string
+#  firstnum = beginning of string,
+#  secondnum = end of string
+str="complicated stuff"
+substr=${str:3:14}
+echo $substr
+
+#_ lib_basic_functions
+function print_date(){
+    date +"%D %M %Y" | awk '{print $1}'
+}
+
+function print_time(){
+    date | awk '{print $5}' | tr ":" " " | awk '{print $1" "$2}' | tr " " ":"
+}
+
+#_ end
