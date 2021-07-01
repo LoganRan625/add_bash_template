@@ -14,7 +14,7 @@ templates=$(echo "$(cat $template_file | grep '_')" | grep '#_' | sed 's/[0-9]//
 for tem in $templates
 do
     ((i++))
-    printf "$i $tem\n"
+    printf "%s %s\n" "$i" "$tem"
     saved+=($tem)
 done
 read choice
