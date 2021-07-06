@@ -4,6 +4,74 @@ mksh will execute add_bash_templates so you can add the templates you wish to us
 
 # add_bash_template
 choose templates of functions, variables, loops, from a bash_templates file to add to your file_name.sh
+  
+  EXAMPLE FILE:
+  
+    #!/usr/bin/env bash
+
+        ################################################
+        # Name: new_sh_file          Date: 07/06/21
+        # Time: 01:22                Type: Bash
+        # Copyright: none
+        # Goal:
+        #
+        ################################################
+
+    # section_variables
+
+    ############# headers #############
+    #source <somefilename>
+    #source <somefilename> 
+
+    ########### variables #############
+    a1=$1; a2=$2; a3=$3; a4=$4
+
+    #_ section_functions
+
+    ########### functions #############
+
+    #_ missing_requirements_exit
+    
+    # error function 
+    function error(){
+         echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
+    }
+
+    # didnt supply any arguments when executing script
+    if [[ $# -lt 0 ]]; then
+        err "Missing required argument\n"
+        exit 1
+    fi
+
+    # did not run as root
+    if [[ $UID == 1 ]];then 
+        err "Error: you must be root to run this script, try sudo <scriptname>"
+        exit 1
+    fi
+
+    #_ section_main
+
+    ############# main ################
+
+
+    #_ skeleton_main_while_if
+    function main(){ # <arg1> <arg2>
+        local input1
+        local input2
+        input1=$1
+        input2=$2
+        # infinite loop
+        while :
+        do
+                if [[ $1 == 1 ]]; then
+                        #something
+                elif [[ $2 < 1 ]]; then
+                        #something
+                else
+                        #something
+                fi
+        done
+    }
 
 
 # BEFORE RUNNING:
