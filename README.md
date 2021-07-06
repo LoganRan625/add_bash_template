@@ -47,6 +47,6 @@ ADDING TO EXISTING FILE
 
    Example 
         
-     ./add_bash_template newfile.sh
+     ./add_bash_template file.sh
   
 
