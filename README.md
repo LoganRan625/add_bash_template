@@ -7,6 +7,7 @@ choose which functions, variables, common loops, from a template file to add to 
 For this to work you need both
   1) add_bash_templates
   2) bash_templates 
+  3) mksh
 
 add your own templates inside \<bash_templates\>
   
