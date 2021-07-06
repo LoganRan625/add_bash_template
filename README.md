@@ -13,7 +13,7 @@ For this to work you need both
   2) bash_templates 
   3) mksh
 
-add your own templates inside \<bash_templates\>
+add your own custom templates inside \<bash_templates\>
   
 Before and after each template in \<bash_templates\> 
   1) line must start with "#_ " on the same line
