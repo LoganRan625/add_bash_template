@@ -17,7 +17,9 @@ Before and after each template in \<bash_templates\>
     
    EXAMPLE "#_ basic_functions"
    
-      note; without an underscore in the name it will
+      note
+      
+      without an underscore in the name it will
       not show in list of avialable templates to choose
 
 
