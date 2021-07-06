@@ -30,6 +30,14 @@ Before and after each template in \<bash_templates\>
 
 # USAGE: 
 
+MAKING A NEW \*.sh FILE
+  
+   Syntax
+   
+     mksh
+
+
+ADDING TO EXISTING FILE
    Syntax 
    
      ./add_bash_template <arg1> 
