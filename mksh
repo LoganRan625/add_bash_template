@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# NAME: mksh
+# TYPE: Bash
+# DATE: 07/01/21
+# COPYRIGHT: none
+#
+# FILES: add_bash_templates & Bash_Templates
+#
+# GOAL: make bash file with header and skeleton templates if chosen
+
+function main(){
+    printf "\033[36m\n\tCreate File Name\n\t\033[0m"
+    read file_name
+    touch $file_name && chmod 755 $file_name
+    printf "#!/usr/bin/env bash
+
+    ################################################
+    # Name: %-20s Date: %-20s
+    # Time: %-20s Type: %-20s
+    # Copyright: none
+    # Goal:
+    #
+    ################################################
+\n" "$file_name" "$pd" "$pt" "Bash" > $file_name
+    while :
+    do
+        clear
+        ./add_bash_templates $file_name
+        echo "type exit or enter to continue"
+        read tf
+        [ "$tf" == "exit" ] && exit
+    done
+}
+
+function print_date(){
+date +"%D %M %Y" | awk '{print $1}'
+}
+pd=$(print_date)
+
+function print_time(){
+date | awk '{print $5}' | tr ":" " " | awk '{print $1" "$2}' | tr " " ":"
+}
+pt=$(print_time)
+
+main
