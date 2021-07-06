@@ -1,5 +1,9 @@
+# mksh
+create a file, name, give permissions and add header (name, date, type, time, copyright, ...)
+mksh will execute add_bash_templates so you can add the templates you wish to use.
+
 # add_bash_template
-choose which functions, variables, common loops, from a template file to add to your filename.sh
+choose templates of functions, variables, loops, from a bash_templates file to add to your file_name.sh
 
 
 # BEFORE RUNNING:
