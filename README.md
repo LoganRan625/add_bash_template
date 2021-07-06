@@ -35,7 +35,7 @@ MAKING A NEW  \?.sh FILE
   
    Syntax
    
-     mksh
+     ./mksh
 
 
 ADDING TO EXISTING FILE
