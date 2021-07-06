@@ -76,7 +76,7 @@ choose templates of functions, variables, loops, from a bash_templates file to a
 
 # BEFORE RUNNING:
 
-For this to work you need both
+For this to work you need
   1) add_bash_templates
   2) bash_templates 
   3) mksh
