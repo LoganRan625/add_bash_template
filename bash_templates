@@ -3,7 +3,7 @@
 
 #_ section_variables
 
-############# _headers_ #############
+########## _header files_ ###########
 #source ./<path/somefilename>
 #source ./<path/somefilename> 
 
@@ -16,7 +16,7 @@ a1=$1; a2=$2; a3=$3; a4=$4
 
 #_ section_main
 
-############# _main_ ################
+############## _main_ ###############
 
 
 #_ regex_comparison
