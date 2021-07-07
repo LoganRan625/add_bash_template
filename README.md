@@ -32,8 +32,8 @@ info for you, automating the process, saving you time.
     # section_variables
 
     ############# headers #############
-    #source <somefilename>
-    #source <somefilename> 
+    #source . ./<somefilename>
+    #source . ./<somefilename> 
 
     ########### variables #############
     a1=$1; a2=$2; a3=$3; a4=$4
