@@ -6,10 +6,10 @@
   5. USAGE
 
 # mksh
-running mksh will create a file, name, give permissions and add header 
-(name, date, type, time, copyright, ...) mksh will execute 
-add_bash_templates, which will grep all template headers to give you a menu
-so you can add the templates you wish to use.
+running mksh will create a file, name file, give permissions, and 
+add a header with (name, date, type, time, copyright, ...) mksh will 
+execute add_bash_templates, which will grep all template headers to 
+give you a menu so you can add the templates you wish to use.
 
 the value of this is you can quickly add code templates you are 
 aware you will need, like "for loops", "main function", "nested if statements, nested for loops, nested functions"
