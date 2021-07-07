@@ -8,7 +8,14 @@
 # mksh
 running mksh will create a file, name, give permissions and add header 
 (name, date, type, time, copyright, ...) mksh will execute 
-add_bash_templates so you can add the templates you wish to use.
+add_bash_templates, which will grep all template headers to give you a menu
+so you can add the templates you wish to use.
+
+the value of this is you can quickly add code templates you are 
+aware you will need, like "for loops", "main function", "nested if statements, nested for loops, nested functions"
+then fill the templates with your code. it simply speeds up the process of organizing
+and writing bash files, also by filling the header with nessesary 
+info for you, automating the process, saving you time.
 
   EXAMPLE FILE:
   
@@ -79,8 +86,13 @@ add_bash_templates so you can add the templates you wish to use.
     }
 
 
-# add_bash_template
-choose templates of functions, variables, loops, from a bash_templates file to add to your file_name.sh
+# add_bash_templates
+
+choose templates of functions, variables, loops, etc... from a bash_templates file to add to your file.sh
+whats great about this is the entire process is sizable. you can remeove any templates or add any custom 
+templates to **"bash_templates"** file. as long as you follow the "Example:" under **"BEFORE RUNNING:"**
+if the template header in the file does not have the proper syntax it may not get picked up as an option 
+in the **"add_bash_templates"** menu.
 
 # BEFORE RUNNING:
 
@@ -112,8 +124,7 @@ Before and after each template in \<bash_templates\>
 
 # USAGE: 
 
-MAKING A NEW  \?.sh FILE
-
+MAKING A NEW .sh FILE
   
    Syntax
    
@@ -121,7 +132,6 @@ MAKING A NEW  \?.sh FILE
 
 
 ADDING TO EXISTING FILE
-
 
    Syntax 
    
