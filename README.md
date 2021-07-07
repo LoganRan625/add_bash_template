@@ -104,8 +104,9 @@ For this to work you need
 add your own custom templates inside \<bash_templates\>
   
 Before and after each template in \<bash_templates\> 
-  1) line must start with "#_ " on the same line
-  2) the title of the template seperated by "_"
+  1) line must start with "#_" 
+  2) a space
+  3) the title of the template seperated by "_"
     
    EXAMPLE "#_ basic_functions"
    
