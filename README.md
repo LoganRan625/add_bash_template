@@ -31,7 +31,7 @@ info for you, automating the process, saving you time.
 
     # section_variables
 
-    ############# headers #############
+    ########## header files ###########
     #source ./<path/somefilename>
     #source ./<path/somefilename> 
 
